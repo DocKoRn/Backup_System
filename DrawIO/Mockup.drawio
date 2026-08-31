@@ -1,0 +1,94 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="z9yRa1D25Hfx4BuCAsfa">
+    <mxGraphModel dx="1664" dy="927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="shcjHB0P6_vOKMkwah1m-40" edge="1" parent="1" source="shcjHB0P6_vOKMkwah1m-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="shcjHB0P6_vOKMkwah1m-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="310" width="560" x="240" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;Backup&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Now&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="365" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Remove" vertex="1">
+          <mxGeometry height="20" width="60" x="300" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="Info Box:&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Last Backup Info&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Size&lt;/li&gt;&lt;li&gt;Number of Backups&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="170" x="530" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Which Files/Folders&lt;br&gt;&amp;nbsp;are included" vertex="1">
+          <mxGeometry height="40" width="130" x="110" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Where is the backup placed" vertex="1">
+          <mxGeometry height="40" width="80" x="140" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="X" vertex="1">
+          <mxGeometry height="30" width="30" x="770" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Edit" vertex="1">
+          <mxGeometry height="40" width="60" x="300" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-18" parent="1" style="shape=cross;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="50" x="457.5" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Add Backup" vertex="1">
+          <mxGeometry height="40" width="97.5" x="522.5" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="310" width="560" x="240" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Backup Location" vertex="1">
+          <mxGeometry height="30" width="110" x="550" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Change Format&amp;nbsp;&lt;div&gt;(Zip / No-Zip)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="110" x="375" y="705" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="Info Box:&lt;div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Last Backup Info&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Size&lt;/li&gt;&lt;li&gt;Files / Folders included&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="190" x="600" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="X" vertex="1">
+          <mxGeometry height="30" width="30" x="770" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Back" vertex="1">
+          <mxGeometry height="20" width="80" x="710" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Ok" vertex="1">
+          <mxGeometry height="20" width="80" x="620" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Apply" vertex="1">
+          <mxGeometry height="20" width="80" x="530" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cancel" vertex="1">
+          <mxGeometry height="20" width="80" x="427.5" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Settings" vertex="1">
+          <mxGeometry height="20" width="60" x="730" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Sprache" vertex="1">
+          <mxGeometry height="30" width="60" x="810" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Remove Files" vertex="1">
+          <mxGeometry height="30" width="100" x="345" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Remove Folders" vertex="1">
+          <mxGeometry height="30" width="110" x="365" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Add Folders" vertex="1">
+          <mxGeometry height="30" width="90" x="265" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Add Files" vertex="1">
+          <mxGeometry height="30" width="70" x="265" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Edit Name" vertex="1">
+          <mxGeometry height="30" width="80" x="265" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="shcjHB0P6_vOKMkwah1m-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Editing Backup name&amp;nbsp;&lt;div&gt;could lead to conflicts:&lt;br&gt;e.g. Counting number&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;of backups&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="180" x="50" y="695" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
