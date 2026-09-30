@@ -1,0 +1,2 @@
+- method that creates, sets up and returns
+    frame & window
