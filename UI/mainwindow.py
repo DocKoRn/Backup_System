@@ -11,9 +11,24 @@ class MainWindow(tk.Tk):
         # self.rowconfigure(0, weight=5)
         # self.rowconfigure(1, weight=1)
         
+        self.frames_dic = {}
+
+        self.EditFrame1 = EditFrame(self, self)
+        self.EditFrame1.grid(row=0, column=0, sticky='nsew', padx=10, pady=20)
+
+        self.BaseFrame1 = BaseFrame(self, self)
+        self.BaseFrame1.grid(row=0, column=0, sticky='nsew', padx=10, pady=20)
+
+        self.frames_dic[EditFrame] = self.EditFrame1
+        self.frames_dic[BaseFrame] = self.BaseFrame1
+        
+    def switch_topframe(self, container):
+        frame = self.frames_dic[container]
+        frame.tkraise()
+        
 class BaseFrame(mfm.BaseFrameMethods):
-    def __init__(self,container, **kwargs):
-        super().__init__(container,**kwargs)
+    def __init__(self,container, controller, **kwargs):
+        super().__init__(container, **kwargs)
         self.configure(relief='sunken',border=1)
         self.columnconfigure(0, weight=1)
         self.columnconfigure(1, weight=1)
@@ -50,7 +65,7 @@ class BaseFrame(mfm.BaseFrameMethods):
 
         self.cmdEditTxt = tk.StringVar()
         self.cmdEditTxt.set('Edit')
-        cmdEdit = ttk.Button(BaseButtonFrame, textvariable=self.cmdEditTxt)
+        cmdEdit = ttk.Button(BaseButtonFrame, textvariable=self.cmdEditTxt, command=lambda: controller.switch_topframe(EditFrame))
         cmdEdit.grid(column=0, row=1)
 
         self.cmdBackupTxt = tk.StringVar()
@@ -75,7 +90,7 @@ class BaseFrame(mfm.BaseFrameMethods):
         
         
 class EditFrame(ttk.Frame):
-    def __init__(self, container, **kwargs):
+    def __init__(self, container, controller, **kwargs):
         super().__init__(container, **kwargs)
         self.configure(relief='sunken',border=1)
         self.columnconfigure(0, weight=1)
@@ -98,7 +113,7 @@ class EditFrame(ttk.Frame):
         cmd_edit_name = ttk.Button(self, text='Edit Name')
         cmd_edit_name.grid(row=2, column=0)
         
-        cmd_cancel = ttk.Button(self, text='Cancel')
+        cmd_cancel = ttk.Button(self, text='Cancel', command=lambda: controller.switch_topframe(BaseFrame))
         cmd_cancel.grid(row=10,column=3)
         
         cmd_apply = ttk.Button(self, text='Apply')
@@ -106,9 +121,6 @@ class EditFrame(ttk.Frame):
         
         cmd_ok = ttk.Button(self, text='Ok')
         cmd_ok.grid(row=10,column=5)
-        
-        cmd_back = ttk.Button(self, text='Back')
-        cmd_back.grid(row=10,column=6)
         
         cmd_edit_backuplocation = ttk.Button(self, text='Edit Backup-Location')
         cmd_edit_backuplocation.grid(row=0,column=3)
