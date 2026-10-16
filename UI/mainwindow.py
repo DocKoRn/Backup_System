@@ -11,6 +11,14 @@ class MainWindow(tk.Tk):
         # self.rowconfigure(0, weight=5)
         # self.rowconfigure(1, weight=1)
         
+        ########################
+        #STYLE
+        # self.style = ttk.Style(self)
+        # self.style.theme_use('classic')
+        # print(self.style.theme_names())
+        # print(self.style.theme_use())
+        ########################
+        
         self.frames_dic = {}
 
         self.EditFrame1 = EditFrame(self, self)
@@ -23,12 +31,12 @@ class MainWindow(tk.Tk):
         self.frames_dic[BaseFrame] = self.BaseFrame1
         
     def switch_topframe(self, container):
-        frame = self.frames_dic[container]
-        frame.tkraise()
+        self.frames_dic[container].tkraise()
         
 class BaseFrame(mfm.BaseFrameMethods):
     def __init__(self,container, controller, **kwargs):
         super().__init__(container, **kwargs)
+        
         self.configure(relief='sunken',border=1)
         self.columnconfigure(0, weight=1)
         self.columnconfigure(1, weight=1)
@@ -43,13 +51,6 @@ class BaseFrame(mfm.BaseFrameMethods):
 
         BaseLabelFrame = ttk.Frame(self)
         BaseLabelFrame.grid(row=0, column=2, sticky='nsew')
-
-        ########################
-        #STYLE
-        ########################
-        # style = ttk.Style()
-        # style.theme_use('clam')
-
 
         #########################
         #WIDGETS
@@ -89,7 +90,7 @@ class BaseFrame(mfm.BaseFrameMethods):
         LblInfoBox.grid(row=1, column=0, sticky='ew')
         
         
-class EditFrame(ttk.Frame):
+class EditFrame(mfm.BaseFrameMethods):
     def __init__(self, container, controller, **kwargs):
         super().__init__(container, **kwargs)
         self.configure(relief='sunken',border=1)
@@ -114,13 +115,13 @@ class EditFrame(ttk.Frame):
         cmd_edit_name.grid(row=2, column=0)
         
         cmd_cancel = ttk.Button(self, text='Cancel', command=lambda: controller.switch_topframe(BaseFrame))
-        cmd_cancel.grid(row=10,column=3)
+        cmd_cancel.grid(row=3,column=3)
         
         cmd_apply = ttk.Button(self, text='Apply')
-        cmd_apply.grid(row=10,column=4)
+        cmd_apply.grid(row=3,column=4)
         
         cmd_ok = ttk.Button(self, text='Ok')
-        cmd_ok.grid(row=10,column=5)
+        cmd_ok.grid(row=3,column=5)
         
         cmd_edit_backuplocation = ttk.Button(self, text='Edit Backup-Location')
         cmd_edit_backuplocation.grid(row=0,column=3)
